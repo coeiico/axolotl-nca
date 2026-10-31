@@ -11,7 +11,7 @@ Can one small learned rule, applied identically at every pixel, grow a whole sha
 ## Plan
 
 - **Architecture:** each cell holds 16 channels (RGBA plus 12 hidden). Fixed 3×3 Sobel and identity filters let it sense its neighbours. Two 1×1 convolutions (128 hidden, ReLU) compute an update. Cells update at random, and cells with low alpha count as dead.
-- **Data:** one small RGBA target image (about 40×40) that the owner chooses or draws.
+- **Data:** one small RGBA target image (about 40×40), chosen or drawn by hand.
 
 ## Evaluation protocol
 
